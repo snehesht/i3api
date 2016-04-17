@@ -10,10 +10,10 @@ app.get('/', function (req,res){
 });
 
 app.get('/api/v0/ip', function(req,res){
-console.log(req.headers.host)
+console.log(req.headers)
 });
 
 
-app.listen(8000, function(){
+app.listen(80, function(){
 	console.log('Listening on port 8000')
 });
