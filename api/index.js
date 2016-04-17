@@ -10,7 +10,10 @@ app.get('/', function (req,res){
 });
 
 app.get('/api/v0/ip', function(req,res){
-console.log(req)
+	var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+	console.log(ip)
+	res.send(ip)
+	res.end()
 });
 
 
