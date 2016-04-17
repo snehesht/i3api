@@ -1,0 +1,14 @@
+{
+  "name": "i3api",
+  "version": "0.0.0",
+  "description": "API for information like weather, ipaddress ... for i3 Window Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Snehesh",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
