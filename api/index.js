@@ -5,18 +5,20 @@ var app = express();
 
 
 app.get('/', function (req,res){
-	res.send('Welcome, This is an API service for i3 Window manager. ')
+	res.send('Welcome, This is an API service for i3 Window manager. see https://github.com/snehesht/i3api')
 
 });
 
-app.get('/api/v0/ip', function(req,res){
+// Returns IP address
+app.get('/ip', function(req,res){
 	var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-	console.log(ip)
 	res.send(ip)
 	res.end()
 });
 
+// Returns the Weather
 
+// Start the app
 app.listen(80, function(){
-	console.log('Listening on port 8000')
+	console.log('Listening on port 80')
 });
