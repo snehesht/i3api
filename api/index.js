@@ -10,7 +10,7 @@ app.get('/', function (req,res){
 });
 
 app.get('/api/v0/ip', function(req,res){
-console.log(req.headers)
+console.log(req)
 });
 
 
